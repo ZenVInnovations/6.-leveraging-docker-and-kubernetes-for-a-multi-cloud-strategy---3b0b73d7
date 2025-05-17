@@ -1,0 +1,10 @@
+services:
+  product-service:
+    build: ./product-service
+    ports:
+      - "5001:5000"  # map container port 5000 to host port 5001
+
+  user-service:
+    build: ./user-service
+    ports:
+      - "5002:5000"  # map container port 5000 to host port 5002
